@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React application
-RUN npm run build
+#RUN npm run build
 
 # Install a lightweight HTTP server to serve the static files
 # RUN npm install -g serve
