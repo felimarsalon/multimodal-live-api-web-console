@@ -14,13 +14,13 @@ RUN npm install
 COPY . .
 
 # Build the React application
-RUN npm run build
+#RUN npm run build
 
 # Install a lightweight HTTP server to serve the static files
-RUN npm install -g serve
+# RUN npm install -g serve
 
 # Expose the port the app will run on
 EXPOSE 3000
 
 # Command to serve the application
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["npm", "start"]
